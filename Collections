@@ -1,0 +1,71 @@
+print("Enter 1 for append")
+print("Enter 2 for insert")
+print("Enter 3 for extend")
+print("Enter 4 for remove")
+print("Enter 5 for pop")
+print("Enter 6 for reverse")
+print("Enter 7 for len")
+print("Enter 8 for min")
+print("Enter 9 for max")
+print("Enter 10 for count")
+print("Enter 11 for sort")
+print("Enter 12 for index")
+print("Enter 13 for clear")
+print("Enter 14 for concatenation of 11 and 12")
+print("Enter 15 for multiplication")
+L1=[22,33,38,"Python","R","Lisp",22]
+L2=[1,2,66,88,100]
+print("our list 1 is:",L1)
+print("our list 2 is:",L2)
+n=int(input("Type any number to perform the mentioned list operation:"))
+if n==1:
+ a=input("Enter any element to append:")
+ L1.append(a)
+ print("After append operation:",L1)
+elif(n==2):
+  print("Enter any item to be insert:")
+  inputstring=input()
+  print(inputstring)
+  a=int(input("Enter the place of the item to be insert:"))
+  L1.insert(a,inputstring)
+  print("After insert operation:",L1)
+elif(n==3):
+  a=int(input("Enter the number of elements to be extend:"))
+  for i in range(0,a):
+    ele=[input("Enter the element:")]
+    L1.extend(ele)
+  print(L1)
+elif(n==4):
+    r=input("Enter the element to be remove:")
+    L1.remove(r)
+    print(L1)
+elif(n==5):
+    p=int(input("Enter the element to be pop:"))
+    L1.pop(p)
+    print(L1)
+elif(n==6):
+    L1.reverse()
+    print(L1)
+elif(n==7):
+    print(len(L1))
+elif(n==8):
+    print(min(L2))
+elif(n==9):
+    print(max(L2))
+elif(n==10):
+    c=int(input("Enter any element which has to count:"))
+    print(L1.count(c))
+elif(n==11):
+    L2.sort()
+    print(L2)
+elif(n==12):
+    i=int(input("Enter any element to find its index:"))
+    print(L1.index(i))
+elif(n==13):
+    L1.clear()
+    print(L1)
+elif(n==14):
+    print("L1+L2")
+elif(n==15):
+    m=int(input("Enter any number to multiply with 1"))
+    print(L1*m)
